@@ -1,0 +1,104 @@
+<!--Un formulaire avec 
+Champs nom prénom
+Champs age jour/mois/année
+Choix du genre avec des checkbox Masculin féminin autre
+Permis de conduire oui ou non 
+Choix du pays avec un dropdown et plusieurs proposition
+Numero de téléphone
+Email
+mot de passe avec un nombre de caractère minimum
+Un bouton pour reset le formulaire
+un bouton pour envoyer le formulaire (qui envoie sur une page 4O4)
+Tout les champs doivent avoir un exemple
+Et quand on est sur un champs faire que l'on passe au champs suivant en appuyant sur tab-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+
+
+<body>
+    <h1>Formulaire</h1>
+
+     <form action="404.html">
+         <fieldset>
+        <label> Nom
+    <!--on peut utiliser tabindex pour que la barre d'écart permette d'aller de fichier
+    en fichiers-->
+            <input type="text" name="name" placeholder="Jean" tabindex="2">
+        </label>
+
+        <label> Prenom
+            <input type="text" name="name" placeholder="Dubois" tabindex="1">
+        </label>
+
+        
+        <p>
+            <label>Date de Naissance
+                <input type="date" name="name">
+            </label>
+        </p>
+
+        
+                <p>Genre</p>
+                <p>
+                <label for="homme">Homme</label>
+                <input type="checkbox" name="homme" id="homme" />
+                <label for="femme">Femme</label>
+                <input type="checkbox" name="Femme" id="femme" />
+                <label for="autre">Autre</label>
+                <input type="checkbox" name="autre" id="autre" />
+                </p>
+    
+        </fieldset>
+
+        <fieldset>
+            <p>Permis de Conduire</p>
+            <label for="license">oui</label>
+            <input type="radio" name="license" id="license"/>
+            <label for="license">non</label>
+            <input type="radio" name="license" id="licencse" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Pays</legend>
+            <select name="pays"> 
+                <option value="France" selected="selected">France </option>
+                <option value="Afghanistan">Afghanistan </option>
+                <option value="Afrique_Centrale">Afrique_Centrale </option>
+                <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                <option value="Albanie">Albanie </option>
+            </select>
+
+            <p>
+            <label> Telephone
+                <input type="number" placeholder="00 00 00 00 00">
+            </label>
+            </p>
+
+            <label> Email 
+                <input type="email" placeholder="cmoi@gmail.com">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="password">Mot de Passe</label>
+            <input type="password" id="password" minlength="8" placeholder="........">
+        </fieldset>
+
+        <pre>
+        <button type="reset">réinitialiser le formulaire</button>
+        <input type="submit"/>
+        </pre>
+
+     </form>
+
+
+</body>
+</html>
